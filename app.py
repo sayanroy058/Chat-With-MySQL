@@ -8,7 +8,7 @@ from langchain_core.messages import AIMessage, HumanMessage
 
 # ------------ Loading environment, api_keys and Initializing the Gemini Model configuration files --------------------
 
-load_dotenv() # when you are using it locally uncomment this line
+# load_dotenv() # when you are using it locally uncomment this line
 
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"]) # extracting api_key from streamlit cloud. # when you are using it locally get the api key from .env file. 
 # genai.configure(api_key=os.getenv("GEMINI_API_KEY")) # for extracting api key from .env file. 
